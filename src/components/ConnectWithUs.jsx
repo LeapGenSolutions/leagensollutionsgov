@@ -75,7 +75,7 @@ function ConnectWithUs() {
       </div>
       <div className="flex flex-col gap-[20px]">
         <ButtonWhite text={"+1 609 722 6768"} />
-        <ButtonWhite text={"conatct@leapgen.ai"} />
+        <ButtonWhite text={"contact@leapgen.ai"} />
       </div>
     </div>
   );
