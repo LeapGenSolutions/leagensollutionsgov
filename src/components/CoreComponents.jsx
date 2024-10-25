@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 import Carousel from "./Carousel";
-import pdf_file from "../assets/Brouchere.pdf"
+import pdf_file from "../assets/LeapGen Gov Brochure 2024.pdf"
 
 function CoreComponents() {
   return (

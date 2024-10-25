@@ -7,6 +7,9 @@ function ConnectWithUs() {
     <div className="connectwithus m-[40px] py-[50px] px-[60px] rounded-[20px] flex flex-row justify-between gap-[20px] flex-wrap max-md:px-[30px] max-md:py-[30px] max-md:m-[20px]">
       <div className="flex flex-col gap-[20px]">
         <h2 className="text-[36px] text-[#fff] font-[600]">ConnectWithUs</h2>
+        <p className="text-[#fff]">
+          44790 Maynard Square Suite 350, Ashburn, Virginia 20147
+        </p>
         <div className="flex flex-row gap-[20px]">
           <a target="_blank" rel="noreferrer" href="https://x.com/LeapgenAi">
             <svg
