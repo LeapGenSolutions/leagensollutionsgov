@@ -85,7 +85,7 @@ function SuccessStories() {
       title="Modern Application Development​"
       desc1="The application that supports the Medicare provider and supplier enrollment process by capturing provider/supplier information​."
       desc2="Challenge​ ​  The application was monolithic, very complicated to maintain, systems are not integrated with each other. Manual workflow and high-performance issues​"
-      desc3="The  front was developed using Angular.​  Traffic Manager ​  The application is deployed to be highly available on multipe regions​  The Application Gateway​  Is integrated with other Azure services and Azure Traffic Manager  to support multiple-region redirection, automatic failover, and zero-downtime maintenance​  ​"
+      desc3="The  front was developed using Angular.​  Traffic Manager ​  The application is deployed to be highly available on multiple regions​  The Application Gateway​  Is integrated with other Azure services and Azure Traffic Manager  to support multiple-region redirection, automatic failover, and zero-downtime maintenance​  ​"
     ></Card>,
     <Card
       key={1}
@@ -96,7 +96,7 @@ function SuccessStories() {
       image={Success2}
       title="Cloud Migration​"
       desc1="The goal is to build a resilient hybrid  infrastructure where they can unleash the power of cloud as an extension to On-premise data center. ​"
-      desc2="Challenge​ ​  The agency high priority to build high scalable data and AI workloads. There are many limitations with the existing ​ on-Prem data centers like old hardware, cannot scale, Out of Support etc.​  ​  It was very important to step up in the game to host various critical applications that operate on larger data sets."
+      desc2="Challenge​ ​  The agency's high priority is to build highly scalable data and AI workloads. There are many limitations with the existing ​ on-Prem data centers like old hardware, cannot scale, Out of Support etc.​  ​  It was very important to step up in the game to host various critical applications that operate on larger data sets."
       desc3="Solution:​  ​  Express route and Site-to-site VPN is built to Azure. We used Azure site recovery​  Back and restore the databases to Azure SQL Managed Instance and SQL Virtual Machines​  Data Migration Assistant​  Azure Migrate to assess the databases to understand if there are any blockers or limitations​"
     ></Card>,
     <Card
@@ -108,7 +108,7 @@ function SuccessStories() {
       image={Success3}
       title="Modern Data Analytics & AI​"
       desc1="Customer is a NY agency who is stepping into cloud journey. The goal is to build a resilient hybrid  infrastructure where they can unleash the power of cloud as an extension to On-premise data center. "
-      desc2="Challenge​ ​  Disparate data sources with 90 databases often redundant data.​  Inability to combine streaming and history data.​  No data governance mechanism and master data challenges.​  Difficulty to find and access data when business needs to make decisions.​  Siloed applications which do not talk to each other."
+      desc2="Challenge​ ​  Disparate data sources with 90 databases often redundant data.​  Inability to combine streaming and history data.​  No data governance mechanism and master data challenges.​  Difficulty in finding and accessing data when business needs to make decisions.​  Siloed applications which do not talk to each other."
       desc3="The solution was to stream data from various IOT sensors, historians and other data sources into ​  Microsoft’s Azure Synapse Analytics for real time insight generation."
     ></Card>,
   ];

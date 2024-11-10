@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../index.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
 function ProfessionalServices() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const values = [
     {
       name: "Strategic Business Assessment & Alignment ",

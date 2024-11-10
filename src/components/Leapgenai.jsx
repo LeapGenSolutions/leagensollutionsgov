@@ -15,7 +15,9 @@ function Leapgenai() {
               Leapgengov.ai
             </h1>
           </div>
-          <button className="feature-button">Explore Now</button>
+          <a href="https://www.leapgengov.ai" target="_blank" rel="noreferrer">
+            <button className="feature-button">Explore Now</button>
+          </a>
         </div>
       </div>
       <div className="flex-1 flex flex-col items-center min-w-[300px]">

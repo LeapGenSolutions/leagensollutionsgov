@@ -6,7 +6,7 @@ function ConnectWithUs() {
   return (
     <div className="connectwithus m-[40px] py-[50px] px-[60px] rounded-[20px] flex flex-row justify-between gap-[20px] flex-wrap max-md:px-[30px] max-md:py-[30px] max-md:m-[20px]">
       <div className="flex flex-col gap-[20px]">
-        <h2 className="text-[36px] text-[#fff] font-[600]">ConnectWithUs</h2>
+        <h2 className="text-[36px] text-[#fff] font-[600]">Connect With Us</h2>
         <p className="text-[#fff]">
           44790 Maynard Square Suite 350, Ashburn, Virginia 20147
         </p>
@@ -74,8 +74,12 @@ function ConnectWithUs() {
         </div>
       </div>
       <div className="flex flex-col gap-[20px]">
-        <ButtonWhite text={"+1 609 722 6768"} />
-        <ButtonWhite text={"contact@leapgen.ai"} />
+        <a href="tel:+16097226768" class="phone-button">
+          <ButtonWhite text={"+1 609 722 6768"} />
+        </a>
+        <a href="mailto:contact@leapgen.ai" class="email-button">
+          <ButtonWhite text={"contact@leapgen.ai"} />
+        </a>
       </div>
     </div>
   );
