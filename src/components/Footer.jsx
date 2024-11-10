@@ -1,7 +1,12 @@
 import React from "react";
 import Logo from "../assets/logo_full.avif";
+import { useNavigate } from "react-router-dom";
 
-function Footer({ handleMenuClick }) {
+function Footer() {
+  const navigate = useNavigate();
+  const handleMenuClick = (menuItem) => {
+    navigate(`/#${menuItem}`);
+  };
   return (
     <footer className="bg-[#FBFBFB] text-white px-[95px] pt-[80px] pb-[40px] border-t-[0.2px] border-t-[rgb(251, 251, 251)] flex flex-col gap-[50px] max-md:p-[30px]">
       <div className="mx-auto flex flex-col items-center justify-center gap-[25px]">
@@ -17,7 +22,7 @@ function Footer({ handleMenuClick }) {
             </li>
             <li onClick={() => handleMenuClick("leapgen")}>
               <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
-                Leapgengov.ai
+                Leapgen.ai
               </button>
             </li>
             <li onClick={() => handleMenuClick("core")}>

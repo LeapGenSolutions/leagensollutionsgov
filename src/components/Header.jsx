@@ -27,7 +27,7 @@ const Header = ({ handleMenuClick, from }) => {
         />
       </svg>
       {from ? (
-        <div className="flex flex-row justify-between w-full">
+        <div className="flex flex-row w-full justify-between">
           <img className="w-[250px] h-[42px] max-md:hidden" src={Logo} alt="" />
           <Link to={`/`}>
             <Button text="Leapgen Solutions" />
@@ -68,7 +68,7 @@ const Header = ({ handleMenuClick, from }) => {
               </li>
               <li onClick={() => handleMenuClick("leapgen")}>
                 <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
-                  Leapgengov.ai
+                  Leapgen.ai
                 </button>
               </li>
               <li onClick={() => handleMenuClick("core")}>
@@ -91,21 +91,23 @@ const Header = ({ handleMenuClick, from }) => {
                   Solutions
                 </button>
               </li>
+              <Link to="/partners">
+                <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
+                  Partners
+                </button>
+              </Link>
               <li onClick={() => handleMenuClick("connect")}>
                 <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
                   Contact Us
                 </button>
               </li>
-              <Link to={`/`}>
-                <Button text="Leapgen Solutions" />
-              </Link>
             </ul>
           </nav>
           <nav
             className={`flex flex-row items-center justify-between w-full max-md:hidden`}
           >
             <img className="w-[250px] h-[42px] mr-[1rem]" src={Logo} alt="" />
-            <ul className="flex items-center gap-[20px]">
+            <ul className="flex gap-[20px]">
               <li onClick={() => handleMenuClick("hero")}>
                 <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
                   Home
@@ -113,7 +115,7 @@ const Header = ({ handleMenuClick, from }) => {
               </li>
               <li onClick={() => handleMenuClick("leapgen")}>
                 <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
-                  Leapgengov.ai
+                  Leapgen.ai
                 </button>
               </li>
               <li onClick={() => handleMenuClick("core")}>
@@ -136,14 +138,16 @@ const Header = ({ handleMenuClick, from }) => {
                   Solutions
                 </button>
               </li>
+              <Link to="/partners">
+                <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
+                  Partners
+                </button>
+              </Link>
               <li onClick={() => handleMenuClick("connect")}>
                 <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
                   Contact Us
                 </button>
               </li>
-              <Link to={`/`}>
-                <Button text="Leapgen Solutions" />
-              </Link>
             </ul>
           </nav>
         </>

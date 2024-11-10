@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
+import PublicServices from "./PublicServices";
 import CoreValues from "./CoreValues";
 import Plans from "./Plans";
 import SuccessStories from "./SuccessStories";
@@ -9,7 +10,7 @@ import Partners from "./Partners";
 import ConnectWithUs from "./ConnectWithUs";
 import CoreComponents from "./CoreComponents";
 import Leapgenai from "./Leapgenai";
-import AdditionalInfo from "./AdditionalInfo";
+import { useLocation } from "react-router-dom";
 
 const Home = (props) => {
   const heroRef = useRef(null);
@@ -20,23 +21,26 @@ const Home = (props) => {
   const plansRef = useRef(null);
   const connectRef = useRef(null);
 
-  function handleMenuClick(menuItem) {
-    if (menuItem === "hero") {
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash.replace("#", "");
+    if (hash === "hero" && heroRef.current) {
       heroRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "leapgen") {
+    } else if (hash === "leapgen" && leapgenRef.current) {
       leapgenRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "core") {
+    } else if (hash === "core" && coreRef.current) {
       coreRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "comp") {
+    } else if (hash === "comp" && compRef.current) {
       compRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "success") {
+    } else if (hash === "success" && successRef.current) {
       successRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "plans") {
+    } else if (hash === "plans" && plansRef.current) {
       plansRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (menuItem === "connect") {
+    } else if (hash === "connect" && connectRef.current) {
       connectRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  }, [location.hash]);
 
   useEffect(() => {
     if (props.loadHistory === true) {
@@ -52,14 +56,16 @@ const Home = (props) => {
 
   return (
     <div className="bg-white">
-      <Header handleMenuClick={handleMenuClick} />
+      <Header
+        handleMenuClick={(menuItem) => (window.location.hash = `#${menuItem}`)}
+      />
       <div ref={heroRef}>
         <Hero ref={heroRef} />
       </div>
       <div ref={leapgenRef}>
         <Leapgenai ref={leapgenRef} />
       </div>
-      {/* <PublicServices /> */}
+      <PublicServices />
       <div ref={coreRef}>
         <CoreValues ref={coreRef} />
       </div>
@@ -76,8 +82,9 @@ const Home = (props) => {
       <div ref={connectRef}>
         <ConnectWithUs ref={connectRef} />
       </div>
-      <AdditionalInfo />
-      <Footer handleMenuClick={handleMenuClick} />
+      <Footer
+        handleMenuClick={(menuItem) => (window.location.hash = `#${menuItem}`)}
+      />
     </div>
   );
 };
