@@ -1,7 +1,6 @@
 import React from "react";
 import "../index.css";
 import PublicServicesImg from "../assets/public_services.avif";
-import Button from "./Button";
 
 function PublicServices() {
   return (
@@ -24,7 +23,6 @@ function PublicServices() {
             Streamline operations, enhance citizen engagement, and drive
             efficiency with our bespoke technology services.
           </p>
-          <Button text="Explore Now" />
         </div>
       </div>
     </div>

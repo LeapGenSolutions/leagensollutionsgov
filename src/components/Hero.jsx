@@ -117,7 +117,7 @@ const Hero = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-[50px] font-bold max-md:text-[35px]">15k+</h3>
+            <h3 className="text-[50px] font-bold max-md:text-[35px]">50+</h3>
             <p className="text-[18px] text-[#353535] font-[600]">
               Happy Customers
             </p>

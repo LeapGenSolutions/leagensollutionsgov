@@ -22,7 +22,7 @@ function Footer() {
             </li>
             <li onClick={() => handleMenuClick("leapgen")}>
               <button className="text-[#666666] hover:text-[#0088ff] font-medium text-[15px] cursor-pointer">
-                Leapgen.ai
+                Leapgengov.ai
               </button>
             </li>
             <li onClick={() => handleMenuClick("core")}>

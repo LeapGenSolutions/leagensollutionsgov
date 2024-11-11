@@ -6,7 +6,6 @@ import PublicServices from "./PublicServices";
 import CoreValues from "./CoreValues";
 import Plans from "./Plans";
 import SuccessStories from "./SuccessStories";
-import Partners from "./Partners";
 import ConnectWithUs from "./ConnectWithUs";
 import CoreComponents from "./CoreComponents";
 import Leapgenai from "./Leapgenai";
@@ -78,7 +77,6 @@ const Home = (props) => {
       <div ref={plansRef}>
         <Plans ref={plansRef} />
       </div>
-      <Partners />
       <div ref={connectRef}>
         <ConnectWithUs ref={connectRef} />
       </div>
