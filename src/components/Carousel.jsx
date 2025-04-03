@@ -16,7 +16,7 @@ const Carousel = () => {
       title: "Data & AI Solutions",
       image: CoreComp1,
       description:
-        "Specializing in artificial intelligence and data analytics, LeapGen Solutions develops tools and strategies to leverage data for business insights, process automation, and decision support systems. This includes their products like Seismic, Octopus, and SurroundAI.",
+        "Specializing in artificial intelligence and data analytics, LeapGen Solutions develops tools and strategies to leverage data for business insights, process automation, and decision support systems. This includes their products like Seismic, Data Coffee, and SurroundAI.",
       path: "Data&Ai",
     },
     {
